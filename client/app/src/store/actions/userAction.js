@@ -47,14 +47,21 @@ export function userRegisterAsync({ url, payload, history }) {
 }
 
 export function userDetailAsync({ url, setLoading }) {
-  axios({
-    url: url,
-    method: 'GET'
+  return ((dispatch) => {
+    axios({
+      url: url,
+      method: 'GET'
+    })
+      .then(({ data }) => {
+        dispatch(setUser(data));
+        setLoading(false);
+      })
+      .catch(err => {
+        console.log(err);
+      })
   })
-    .then(({ data }) => {
-      console.log(data)
-    })
-    .catch(err => {
-      console.log(err)
-    })
+}
+
+export function setUser(payload) {
+  return { type: 'user/setUser', payload };
 }

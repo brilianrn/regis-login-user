@@ -19,11 +19,11 @@ function App() {
       <Navbar></Navbar>
       <div className="App">
         <Switch>
-          <Route path='/admin-login'>
-            <Login></Login>
-          </Route>
           <Route path='/profile-detail/:id'>
             <Detail></Detail>
+          </Route>
+          <Route path='/admin-login'>
+            <Login></Login>
           </Route>
           <Route path='/register'>
             <Registrasi></Registrasi>

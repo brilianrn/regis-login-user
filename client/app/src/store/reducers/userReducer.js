@@ -1,5 +1,6 @@
 const initialState = {
-  users: []
+  users: [],
+  user: {}
 };
 
 function userReducer(state = initialState, action) {
@@ -7,6 +8,8 @@ function userReducer(state = initialState, action) {
 
   if (type == 'users/setUsers') {
     return { ...state, users: payload };
+  } else if (type == 'user/setUser') {
+    return { ...state, user: payload};
   }
 
   return state;

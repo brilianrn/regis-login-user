@@ -2,6 +2,11 @@
   /* text-align: center; */
 }
 
+#img-detail {
+  height: 250px;
+  width: auto;
+}
+
 #loading {
   display: flex;
   margin-left: auto;

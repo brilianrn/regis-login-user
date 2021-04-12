@@ -23,7 +23,7 @@ export default function Home() {
     const { event, id } = params;
 
     event.preventDefault();
-    history.push('/detail/' + id);
+    history.push('/profile-detail/' + id);
   }
 
   return (
