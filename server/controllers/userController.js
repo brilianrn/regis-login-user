@@ -30,12 +30,11 @@ class UserController{
       if (cekPassword) {
         res.status(200).json({ name: data.name, email: data.email })
       } else {
-        throw new Error()
+        throw new Error({ name: 'loginFail' })
       }
     })
-    .catch(err => {
-      console.log(err);
-      next(err);
+    .catch(_ => {
+      next({ name: 'loginFail' });
     })
   };
 };
