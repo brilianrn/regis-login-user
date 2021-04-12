@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "brilianrachmadnurwachidin",
+    "password": "postgres",
+    "database": "vascoom-challenge",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "brilianrachmadnurwachidin",
+    "password": "postgres",
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "brilianrachmadnurwachidin",
+    "password": "postgres",
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
